@@ -10,3 +10,6 @@ new_df
 
 df1=df.loc[new_df]
 df1
+
+df2=df1.set_index('Date')
+df2
