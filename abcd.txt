@@ -13,3 +13,11 @@ df1
 
 df2=df1.set_index('Date')
 df2
+
+plt.figure(figsize=(5,5))
+plt.suptitle('Stock price of Alphabet Inc.,\n01-06-2020 to 30-9-2020', \
+             fontsize=18, color='black')
+plt.xlabel("Date",fontsize=16, color='black')
+plt.ylabel("$ price",fontsize=16, color='black')
+df2['Close'].plot(color='green');
+plt.show()
