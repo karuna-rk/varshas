@@ -7,3 +7,6 @@ end_date=pd.to_datetime('2020-9-30')
 df['Date']=pd.to_datetime(df['Date'])
 new_df=(df['Date']>=start_date)& (df['Date']<=end_date)
 new_df
+
+df1=df.loc[new_df]
+df1
